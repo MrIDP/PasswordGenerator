@@ -14,11 +14,11 @@ namespace MyTestC_App
                 bigLetters[i] = Convert.ToChar(letters[i].ToString().ToUpper());
             }
             Random random = new Random();
-            byte от = 6, до = 20 + 1, количествоСимволов = Convert.ToByte(random.Next(от, до));
+            byte min = 6, max = 20 + 1, countSymbols = Convert.ToByte(random.Next(min, max));
             string password = "";
             byte _checker = 0, letterChecker = 0, numberChecker = 0;
             bool isNumber = false;
-            for (int i = 0; i <= количествоСимволов; i++)
+            for (int i = 0; i <= countSymbols; i++)
             {
                 switch (random.Next(0, 5))
                 {
